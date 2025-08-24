@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontakt – NewPrompt</title>
+  <meta name="description" content="Skontaktuj się z NewPrompt. Formularz kontaktowy, e-mail i dane rejestrowe spółki." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.svg" alt="NewPrompt" width="34" height="34" style="border-radius:10px">
+        <span>NewPrompt</span>
+      </a>
+      <nav class="menu">
+  <a href="index.html">Oferta</a>
+  <a href="prismanp.html">PRISMA-NP</a>
+  <a href="szkolenia.html">Szkolenia</a>
+  <a href="firmy.html">Firmy</a>
+  <a href="onas.html">O nas</a>      <!-- NOWY LINK -->
+  <button class="contrast-toggle" aria-label="Włącz wysoki kontrast" aria-pressed="false" title="Wysoki kontrast">
+  <!-- prosta ikona (SVG, bez zewn. czcionek) -->
+  <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M12 3a9 9 0 000 18V3zM13 3.06A9 9 0 1120.94 11 9 9 0 0113 3.06z" fill="currentColor"/>
+  </svg>
+  <span class="label">Kontrast</span>
+</button>
+  <a href="kontakt.html" class="cta">Kontakt</a>
+      </nav>
+      <button class="burger" aria-label="Otwórz menu"><span></span></button>
+
+
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="start" class="hero">
+    <div class="container">
+      <span class="eyebrow">Skontaktuj się z nami</span>
+      <h1><span class="grad">Kontakt</span>. Jesteśmy tu, żeby pomóc</h1>
+      <p class="lead">Masz pytania o szkolenia, polityki AI czy druk 3D? Napisz do nas – odpowiemy tego samego dnia roboczego.</p>
+    </div>
+  </main>
+
+  <!-- FORMULARZ -->
+  <section id="kontakt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Formularz kontaktowy</h2>
+        <p class="muted">Wypełnij krótko formularz – odezwiemy się najszybciej jak to możliwe.</p>
+      </div>
+      <form action="mailto:kontakt@newpromptai.pl" method="post" enctype="text/plain" class="card" style="max-width:720px;margin:0 auto;display:grid;gap:16px">
+        <label>Imię i nazwisko<br>
+          <input type="text" name="name" required class="input" placeholder="Jan Kowalski">
+        </label>
+        <label>Email<br>
+          <input type="email" name="email" required class="input" placeholder="jan@firma.pl">
+        </label>
+        <label>Temat<br>
+          <input type="text" name="subject" class="input" placeholder="Temat wiadomości">
+        </label>
+        <label>Wiadomość<br>
+          <textarea name="msg" rows="6" class="input" placeholder="Napisz krótko, czego potrzebujesz..."></textarea>
+        </label>
+        <button class="btn primary" type="submit">Wyślij</button>
+        <small class="muted">Wysyłając wiadomość akceptujesz <a href="files/rodo.pdf" target="_blank" rel="noopener">Politykę RODO</a>.</small>
+      </form>
+    </div>
+  </section>
+
+  <!-- DANE FIRMY -->
+  <section id="dane-firmy">
+    <div class="container">
+      <div class="section-head">
+        <h2>Dane firmy</h2>
+        <p class="muted">Pełne dane rejestrowe spółki.</p>
+      </div>
+      <div class="card" style="max-width:700px;margin:0 auto;text-align:center">
+        <p><b>NewPrompt sp. z o.o.</b><br>
+        ul. Juliusza Lea 114, lok. 416A/416B<br>
+        30-133 Kraków</p>
+        <p>KRS: 0001171407 • NIP: 6772525131 • REGON: 541704038</p>
+        <p>Email: <a href="mailto:kontakt@newpromptai.pl">kontakt@newpromptai.pl</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="foot-grid">
+        <div>
+          <div class="brand">
+            <img src="assets/img/logo.svg" alt="" width="28" height="28" style="border-radius:8px">
+            <span>NewPrompt</span>
+          </div>
+          <small>Nowoczesne szkolenia i wdrożenia AI oraz druk 3D.</small>
+        </div>
+        <div>
+          <strong>Dokumenty</strong><br>
+          <a href="files/regulamin.pdf" download>Regulamin (PDF)</a><br>
+          <a href="files/rodo.pdf" download>RODO / Polityka (PDF)</a>
+        </div>
+        <div>
+          <strong>Kontakt</strong><br>
+          <a href="mailto:kontakt@newpromptai.pl">kontakt@newpromptai.pl</a><br>
+          ul. Juliusza Lea 114, 30-133 Kraków
+        </div>
+      </div>
+      <div class="copy">© <span id="year"></span> NewPrompt sp. z o.o. – Wszelkie prawa zastrzeżone.</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

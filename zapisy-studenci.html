@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Szkolenie dla studentów – zapisy | NewPrompt</title>
+  <meta name="description" content="Zapisz się na 2-godzinne szkolenie online dla studentów: praktyka z AI, gotowe prompty, bezpieczeństwo i materiały po szkoleniu. Cena 93 zł.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <style>
+    /* Akcent landingowy tej jednej strony */
+    .lp-hero{padding:70px 0 30px;background:
+      radial-gradient(1100px 480px at 10% -5%, rgba(65,84,245,.12), transparent),
+      radial-gradient(900px 380px at 100% 10%, rgba(158,71,229,.10), transparent),
+      linear-gradient(180deg,#fff, #f8fafc)}
+    .badges{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 16px}
+    .badge{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;background:#fff;border:1px solid rgba(2,6,23,.1);box-shadow:0 4px 12px rgba(16,24,40,.06);font-weight:600}
+    .hero-cols{display:grid;grid-template-columns:1.1fr .9fr;gap:22px}
+    .price-card{background:#fff;border:var(--border);border-radius:18px;box-shadow:var(--shadow);padding:22px;display:flex;flex-direction:column;gap:10px}
+    .price{font-size:2rem;font-weight:800}
+    .divider{height:1px;background:rgba(2,6,23,.08);margin:6px 0}
+    .bullets{display:grid;gap:10px}
+    .bullets li{list-style:none;display:flex;gap:10px}
+    .bullets li::before{content:"✔";font-weight:800;color:var(--brand)}
+    .cta-stack{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+    .ghost{background:#fff;border:1px solid rgba(2,6,23,.15)}
+    .section-muted{background:linear-gradient(180deg,#f9fbff,#ffffff)}
+    .steps{counter-reset:step}
+    .step{display:flex;gap:12px}
+    .step::before{counter-increment:step;content:counter(step) ".";font-weight:800;color:var(--brand)}
+    .trust{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+    .footnote{font-size:.9rem;color:var(--muted)}
+    @media (max-width: 980px){ .hero-cols{grid-template-columns:1fr} }
+  </style>
+</head>
+<body>
+  <!-- NAV (bez linka w menu – to landing standalone) -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.svg" alt="NewPrompt" width="34" height="34" style="border-radius:10px">
+        <span>NewPrompt</span>
+      </a>
+      <nav class="menu">
+        <a href="index.html">Oferta</a>
+        <a href="prismanp.html">PRISMA-NP</a>
+        <a href="szkolenia.html">Szkolenia</a>
+        <a href="firmy.html">Firmy</a>
+        <a href="onas.html">O nas</a>
+        <a href="kontakt.html" class="cta">Kontakt</a>
+      </nav>
+      <button class="burger" aria-label="Otwórz menu"><span></span></button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main class="lp-hero">
+    <div class="container">
+      <div class="hero-cols">
+        <div>
+          <span class="eyebrow">Szkolenie dla studentów</span>
+          <h1><span class="grad">AI nie daje Ci efektów?</span> Poznaj jego prawdziwą moc.</h1>
+          <p class="lead">Zamiast frustrować się i tracić czas, zobacz, jak wykorzystać AI tak, aby pracowała szybciej, precyzyjniej i zgodnie z Twoimi potrzebami. W 2 godziny damy Ci narzędzia, które odmienią sposób, w jaki działasz – bez żargonu, od razu w praktyce. Odkryj, jak AI może pracować dla Ciebie – zapisz się już teraz.</p>
+          <div class="badges">
+            <span class="badge">2 godziny online</span>
+            <span class="badge">Google Meet</span>
+            <span class="badge">Materiały po szkoleniu</span>
+            <span class="badge">Gotowe prompty</span>
+          </div>
+          <ul class="bullets">
+            <li>Ile razy AI wygenerowało Ci bzdury?</li>
+            <li>Ile razy „zrobię to sam” skończyło się godzinami pracy?</li>
+            <li>Jak często widziałeś, że inni robią w AI rzeczy, których Ty nawet nie potrafisz zacząć?</li>
+          </ul>
+          <div class="cta-stack">
+            <a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSe8wSh1LV2_m5YS5uCTqNDoPoLfyGgc_OI6ET7TA0WMDSzhLg/viewform" target="_blank" rel="noopener">Zapisz się już dziś</a>
+            <a class="btn ghost" href="#program">Zobacz program</a>
+            <!-- NOWY PRZYCISK -->
+            <a class="btn" href="files/szkoleniestudencigpt.pdf" target="_blank" rel="noopener">Zobacz katalog</a>
+          </div>
+        </div>
+        <aside>
+          <div class="price-card">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <strong>Najbliższy termin</strong>
+              <span class="badge">na żywo</span>
+            </div>
+            <div class="price">20&nbsp;września&nbsp;2025 • 16:00</div>
+            <div class="divider"></div>
+            <div><strong>Cena:</strong> 93 zł</div>
+            <div class="footnote">Wierzymy w równy dostęp do wiedzy, która zmienia przyszłość.</div>
+            <div class="divider"></div>
+            <div class="steps">
+              <div class="step"><span>Wypełnij formularz zgłoszeniowy</span></div>
+              <div class="step"><span>Otrzymasz e-mail potwierdzający i link do płatności</span></div>
+              <div class="step"><span>W dniu szkolenia wyślemy link do Google Meet</span></div>
+            </div>
+            <div class="cta-stack">
+              <a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSe8wSh1LV2_m5YS5uCTqNDoPoLfyGgc_OI6ET7TA0WMDSzhLg/viewform" target="_blank" rel="noopener">Dołączam</a>
+              <a class="btn" href="files/regulamin.pdf" target="_blank" rel="noopener">Regulamin (PDF)</a>
+              <a class="btn" href="files/rodo.pdf" target="_blank" rel="noopener">Polityka RODO (PDF)</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <!-- Sekcja: Dlaczego warto -->
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <h2>Dlaczego warto?</h2>
+        <p class="muted">Generatywne AI potrafi znacząco przyspieszać pracę i naukę – pod warunkiem, że rozmawiasz z nim we właściwy sposób.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <h3>AI zwiększa produktywność</h3>
+          <p>Generatywne AI zwiększa produktywność w wykonywaniu zadań – szybciej powstają dokumenty, można zrealizować więcej projektów tygodniowo. Skuteczne użycie AI może poprawić wyniki wysoko wykwalifikowanych osób nawet o kilkadziesiąt procent.</p>
+        </article>
+        <article class="card">
+          <h3>Praktyka zamiast żargonu</h3>
+          <p>2 godziny praktyki online – krok po kroku. Gotowe prompty i szablony do studiów i projektów, a do tego bezpieczna praca z AI i unikanie halucynacji.</p>
+        </article>
+        <article class="card">
+          <h3>Materiały po szkoleniu</h3>
+          <p>Dostajesz pakiet materiałów, żeby wrócić do treści w każdej chwili – bez tracenia notatek.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Program -->
+  <section id="program" class="section-muted">
+    <div class="container">
+      <div class="section-head">
+        <h2>Program 2-godzinnego szkolenia</h2>
+        <p class="muted">Skupiamy się na tym, co działa od razu – na studiach i w projektach.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <span class="tag">1</span>
+          <h3>Jak w końcu dogadać się z AI?</h3>
+          <p>Łączymy wiedzę akademicką z praktyką. Pokażemy, jak formułować zapytania, by model rozumiał kontekst i cel.</p>
+        </article>
+        <article class="card">
+          <span class="tag">2</span>
+          <h3>Gotowe prompty i szablony</h3>
+          <ul>
+            <li>Do nauki, prac i projektów</li>
+            <li>Bezpieczne praktyki, kontrola halucynacji</li>
+            <li>Checklisty „czy wynik jest OK?”</li>
+          </ul>
+        </article>
+        <article class="card">
+          <span class="tag">3</span>
+          <h3>Bezpieczeństwo i etyka</h3>
+          <p>Jak korzystać z AI odpowiedzialnie, z poszanowaniem danych i zasad na uczelni.</p>
+        </article>
+      </div>
+      <div class="hero-cta" style="margin-top:14px">
+        <a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSe8wSh1LV2_m5YS5uCTqNDoPoLfyGgc_OI6ET7TA0WMDSzhLg/viewform" target="_blank" rel="noopener">Zapisz się teraz</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ krótkie -->
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <h2>Najczęstsze pytania</h2>
+        <p class="muted">Szybkie odpowiedzi, zanim klikniesz „Dołączam”.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <h3>Jak wygląda forma zajęć?</h3>
+          <p>Szkolenie zdalne na Google Meet. Dzień przed wydarzeniem dostaniesz link oraz krótkie wskazówki techniczne.</p>
+        </article>
+        <article class="card">
+          <h3>Co jeśli nie mogę być na żywo?</h3>
+          <p>Daj nam znać w formularzu – poinformujemy o kolejnych terminach lub rozwiązaniach alternatywnych.</p>
+        </article>
+        <article class="card">
+          <h3>Co z fakturą?</h3>
+          <p>W formularzu jest pole do danych do faktury (w tym NIP). Wystawiamy fakturę na osobę lub firmę.</p>
+        </article>
+      </div>
+      <p class="footnote" style="margin-top:14px">
+        Twoje dane są bezpieczne i wykorzystamy je wyłącznie w celu realizacji szkolenia.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA końcowe -->
+  <section id="cta">
+    <div class="container">
+      <div class="cta-banner">
+        <h3>Gotowy zrobić więcej w krótszym czasie?</h3>
+        <p class="muted">Dołącz do 2-godzinnego szkolenia i zacznij używać AI świadomie oraz skutecznie.</p>
+        <a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSe8wSh1LV2_m5YS5uCTqNDoPoLfyGgc_OI6ET7TA0WMDSzhLg/viewform" target="_blank" rel="noopener">Zapisz się</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="foot-grid">
+        <div>
+          <div class="brand">
+            <img src="assets/img/logo.svg" alt="" width="28" height="28" style="border-radius:8px">
+            <span>NewPrompt</span>
+          </div>
+          <small>Nowoczesne szkolenia i wdrożenia AI oraz druk 3D.</small>
+        </div>
+        <div>
+          <strong>Dokumenty</strong><br>
+          <a href="files/regulamin.pdf" target="_blank" rel="noopener">Regulamin (PDF)</a><br>
+          <a href="files/rodo.pdf" target="_blank" rel="noopener">RODO / Polityka (PDF)</a>
+        </div>
+        <div>
+          <strong>Kontakt</strong><br>
+          <a href="mailto:kontakt@newpromptai.pl">kontakt@newpromptai.pl</a><br>
+          ul. Juliusza Lea 114, 30-133 Kraków
+        </div>
+      </div>
+      <div class="copy">© <span id="year"></span> NewPrompt sp. z o.o. – Wszelkie prawa zastrzeżone.</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

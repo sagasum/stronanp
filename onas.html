@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>O nas – NewPrompt</title>
+  <meta name="description" content="Poznaj zespół NewPrompt – spin-off Politechniki Krakowskiej. Łączymy AI, edukację i inżynierię.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <style>
+    .team-section{padding:70px 0}
+    .team-card{
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+      background:var(--card);
+      border:var(--border);
+      border-radius:18px;
+      padding:20px;
+      box-shadow:var(--shadow);
+      align-items:center;
+      margin-bottom:28px;
+    }
+    .team-card img{
+      width:100%;
+      max-width:260px;
+      border-radius:14px;
+      object-fit:cover;
+    }
+    .team-info{flex:1}
+    .team-name{margin:0;font-size:1.2rem;font-weight:700}
+    .team-role{color:var(--muted);font-weight:600;margin:.2em 0 .6em}
+    .team-bio{line-height:1.6}
+    @media (min-width: 900px){
+      .team-card{flex-direction:row;align-items:flex-start}
+      .team-card img{margin-right:24px}
+    }
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.svg" alt="NewPrompt" width="34" height="34" style="border-radius:10px">
+        <span>NewPrompt</span>
+      </a>
+      <nav class="menu">
+  <a href="index.html">Oferta</a>
+  <a href="prismanp.html">PRISMA-NP</a>
+  <a href="szkolenia.html">Szkolenia</a>
+  <a href="firmy.html">Firmy</a>
+  <a href="onas.html">O nas</a>      <!-- NOWY LINK -->
+  <button class="contrast-toggle" aria-label="Włącz wysoki kontrast" aria-pressed="false" title="Wysoki kontrast">
+  <!-- prosta ikona (SVG, bez zewn. czcionek) -->
+  <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M12 3a9 9 0 000 18V3zM13 3.06A9 9 0 1120.94 11 9 9 0 0113 3.06z" fill="currentColor"/>
+  </svg>
+  <span class="label">Kontrast</span>
+</button>
+  <a href="kontakt.html" class="cta">Kontakt</a>
+      </nav>
+      <button class="burger" aria-label="Otwórz menu"><span></span></button>
+
+
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main class="hero">
+    <div class="container">
+      <span class="eyebrow">Poznaj zespół</span>
+      <h1><span class="grad">O nas</span> – ludzie NewPrompt</h1>
+      <p class="lead">Jesteśmy spin-offem Politechniki Krakowskiej. Łączymy badania, edukację i inżynierię, żeby wdrażać AI i nowoczesne technologie odpowiedzialnie i skutecznie.</p>
+    </div>
+  </main>
+
+  <!-- ZESPÓŁ -->
+  <section id="zespol" class="team-section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Nasz zespół</h2>
+        <p class="muted">Poznaj ludzi stojących za NewPrompt.</p>
+      </div>
+
+      <!-- Maciej -->
+      <div class="team-card">
+        <img src="assets/img/team/maciej.jpg" alt="Mgr inż. Maciej Gibas">
+        <div class="team-info">
+          <h3 class="team-name">Mgr inż. Maciej Gibas</h3>
+          <div class="team-role">Prezes zarządu • badacz AI</div>
+          <p class="team-bio">Ekspert w AI i technologiach cyfrowych, autor metodyki <b>PRISMA-NP™</b>, organizator szkoły letniej AI (2021–2024). Laureat nagród za działalność naukową i popularyzatorską.</p>
+        </div>
+      </div>
+
+      <!-- Zbigniew -->
+      <div class="team-card">
+        <img src="assets/img/team/zbigniew.jpg" alt="Dr inż. Zbigniew Pilch">
+        <div class="team-info">
+          <h3 class="team-name">Dr inż. Zbigniew Pilch</h3>
+          <div class="team-role">Wiceprezes • mechatronika</div>
+          <p class="team-bio">Ekspert w mechatronice i metodach komputerowych. Adiunkt na PK, współautor licznych publikacji i patentów. W NewPrompt odpowiada za programy edukacyjne i jakość merytoryczną.</p>
+        </div>
+      </div>
+
+      <!-- Kamila -->
+      <div class="team-card">
+        <img src="assets/img/team/kamila.jpg" alt="Inż. Kamila Stańczyk">
+        <div class="team-info">
+          <h3 class="team-name">Inż. Kamila Stańczyk</h3>
+          <div class="team-role">Relacje z klientami • operacje</div>
+          <p class="team-bio">Doświadczenie w projektach związanych z drukiem 3D oraz koordynacji działań zespołu. Odpowiada za kontakt z klientami i dopasowanie oferty do ich potrzeb.</p>
+        </div>
+      </div>
+
+      <!-- Mateusz -->
+      <div class="team-card">
+        <img src="assets/img/team/mateusz.jpg" alt="Inż. Mateusz Pyznar">
+        <div class="team-info">
+          <h3 class="team-name">Inż. Mateusz Pyznar</h3>
+          <div class="team-role">Technologia • druk 3D</div>
+          <p class="team-bio">Odpowiada za aspekty techniczne i realizację zamówień druku 3D. Zajmuje się prototypowaniem, doborem parametrów i materiałów oraz kontrolą jakości wydruków.</p>
+        </div>
+      </div>
+
+      <!-- Łukasz -->
+      <div class="team-card">
+        <img src="assets/img/team/lukasz.jpg" alt="Inż. Łukasz Bolanowski">
+        <div class="team-info">
+          <h3 class="team-name">Inż. Łukasz Bolanowski</h3>
+          <div class="team-role">Marketing • projekty 3D</div>
+          <p class="team-bio">Wsparcie promocji i komunikacji, a także przygotowanie modeli 3D do druku. Łączy aktywność akademicką z działaniami projektowymi w firmie.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta">
+    <div class="container">
+      <div class="cta-banner">
+        <h3>Chcesz dołączyć lub współpracować z NewPrompt?</h3>
+        <p class="muted">Napisz kilka słów o sobie lub potrzebach – odezwiemy się szybko.</p>
+        <a class="btn primary" href="kontakt.html">Skontaktuj się</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="foot-grid">
+        <div>
+          <div class="brand">
+            <img src="assets/img/logo.svg" alt="" width="28" height="28" style="border-radius:8px">
+            <span>NewPrompt</span>
+          </div>
+          <small>Nowoczesne szkolenia i wdrożenia AI oraz druk 3D.</small>
+        </div>
+        <div>
+          <strong>Dokumenty</strong><br>
+          <a href="files/regulamin.pdf" download>Regulamin (PDF)</a><br>
+          <a href="files/rodo.pdf" download>RODO / Polityka (PDF)</a>
+        </div>
+        <div>
+          <strong>Kontakt</strong><br>
+          <a href="mailto:kontakt@newpromptai.pl">kontakt@newpromptai.pl</a><br>
+          ul. Juliusza Lea 114, 30-133 Kraków
+        </div>
+      </div>
+      <div class="copy">© <span id="year"></span> NewPrompt sp. z o.o. – Wszelkie prawa zastrzeżone.</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
